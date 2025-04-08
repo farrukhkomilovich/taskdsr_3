@@ -6,7 +6,7 @@ import { fetchCryptoPrice } from './services/cryptoApi';
 import { Coin } from './types';
 import Button from './components/common/Button';
 
-export const App: React.FC = () => {
+export const App = () => {
   const [coins, setCoins] = useState<Coin[]>([{ name: 'DOGE', price: 0 }]);
   const [searchInput, setSearchInput] = useState('');
   const [error, setError] = useState('');
